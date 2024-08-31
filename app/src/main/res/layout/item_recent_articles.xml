@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_256sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginVertical="@dimen/_16sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:elevation="@dimen/_4sdp"
+    android:orientation="vertical">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:foreground="@drawable/ripple_box_corner_11"
+       android:elevation="@dimen/_5sdp">
+
+       <ImageView
+           android:id="@+id/iv_video"
+           android:layout_width="@dimen/_26sdp"
+           android:layout_height="@dimen/_26sdp"
+           android:elevation="@dimen/_4sdp"
+           android:src="@drawable/ic_video"
+           android:layout_marginStart="@dimen/_18sdp"
+           android:layout_marginTop="@dimen/_17sdp"
+           app:layout_constraintTop_toTopOf="@+id/iv_product"
+           app:layout_constraintStart_toEndOf="@id/iv_product"
+           android:contentDescription="@string/img_desc"/>
+
+       <!--<ImageView
+           android:id="@+id/iv_star"
+           android:layout_width="@dimen/_26sdp"
+           android:layout_height="@dimen/_26sdp"
+           android:elevation="@dimen/_4sdp"
+           android:src="@drawable/ic_star"
+           android:layout_marginEnd="@dimen/_20sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+           app:layout_constraintTop_toTopOf="@+id/iv_product"
+           app:layout_constraintEnd_toEndOf="parent"/>-->
+
+       <ImageView
+           android:id="@+id/iv_product"
+           android:layout_width="@dimen/_119sdp"
+           android:layout_height="match_parent"
+           android:src="@drawable/car_image"
+           android:scaleType="centerCrop"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:contentDescription="@string/img_desc"/>
+
+       <ImageView
+           android:id="@+id/iv_dots"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_ellipse"
+           android:layout_marginTop="@dimen/_25sdp"
+           app:layout_constraintTop_toBottomOf="@+id/iv_video"
+           app:layout_constraintStart_toStartOf="@id/iv_video"
+           android:contentDescription="@string/img_desc"/>
+
+       <TextView
+           android:id="@+id/tvName"
+           style="@style/TextStyleStrawFordMedium"
+           android:layout_marginStart="@dimen/_5sdp"
+           android:lines="1"
+           tools:text="@string/technology"
+           android:textSize="@dimen/_10ssp"
+           app:layout_constraintTop_toTopOf="@+id/iv_dots"
+           app:layout_constraintBottom_toBottomOf="@+id/iv_dots"
+           app:layout_constraintStart_toEndOf="@+id/iv_dots"/>
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:layout_marginEnd="@dimen/_5sdp"
+           android:lineSpacingExtra="@dimen/_3sdp"
+           android:text="@string/description_title"
+           android:fontFamily="@font/strawford_medium"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_13ssp"
+           app:layout_constraintTop_toBottomOf="@+id/iv_dots"
+           app:layout_constraintStart_toStartOf="@id/iv_dots"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <TextView
+           android:id="@+id/tvDate"
+           style="@style/TextStyleStrawFordMedium"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:layout_marginStart="@dimen/_5sdp"
+           android:text="@string/date"
+
+           android:layout_marginBottom="@dimen/_12sdp"
+           android:textColor="@color/light_gray"
+           android:textSize="@dimen/_10ssp"
+           app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="@id/iv_dots"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AlkyeServices" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!--Font Style for Scilla-->
+    <style name="TextScillaRegular" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/scillanarrow_regularitalic</item>
+    </style>
+
+    <style name="TextScillaRegularItalic" parent="TextScillaRegular">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+    </style>
+
+
+     <!--Font Style for StrawFord-->
+    <style name="TextStrawFordRegular" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/strawford_regular</item>
+    </style>
+
+    <style name="TextStrawFordMedium" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/strawford_medium</item>
+    </style>
+
+    <style name="TextStrawFordBold" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/strawford_bold</item>
+    </style>
+
+    <style name="TextStyleStrawFordRegural" parent="TextStrawFordRegular">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="TextStyleStrawFordBold" parent="TextStrawFordBold">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_21ssp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="TextStyleStrawFordMedium" parent="TextStrawFordMedium">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--Custom style for BottomNavigationView-->
+    <style name="Widget.Material3.BottomNavigationView.ActiveIndicator" parent="">
+    <item name="android:width">@dimen/_35sdp</item>
+    <item name="android:height">@dimen/_35sdp</item>
+    <item name="marginHorizontal">@dimen/_10sdp</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator</item>
+    <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/black</item>
+    </style>
+
+</resources>

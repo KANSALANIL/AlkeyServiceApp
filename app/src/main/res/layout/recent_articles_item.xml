@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerRoot"
+    android:layout_width="@dimen/_222sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_19sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:elevation="@dimen/_4sdp"
+    android:orientation="vertical">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:elevation="@dimen/_5sdp">
+
+       <ImageView
+           android:id="@+id/iv_video"
+           android:layout_width="@dimen/_26sdp"
+           android:layout_height="@dimen/_26sdp"
+           android:elevation="@dimen/_4sdp"
+           android:src="@drawable/ic_video"
+           android:layout_marginStart="@dimen/_20sdp"
+           android:foreground="@drawable/ripple_circle"
+           android:layout_marginTop="@dimen/_20sdp"
+           app:layout_constraintTop_toTopOf="@+id/iv_product"
+           app:layout_constraintStart_toStartOf="parent"
+           android:contentDescription="@string/img_desc"/>
+
+       <ImageView
+           android:id="@+id/iv_star"
+           android:layout_width="@dimen/_26sdp"
+           android:layout_height="@dimen/_26sdp"
+           android:elevation="@dimen/_4sdp"
+           android:src="@drawable/ic_star"
+           android:layout_marginEnd="@dimen/_20sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:foreground="@drawable/ripple_circle"
+           app:layout_constraintTop_toTopOf="@+id/iv_product"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:contentDescription="@string/img_desc"/>
+
+       <ImageView
+           android:id="@+id/iv_product"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/_174sdp"
+           android:src="@drawable/car_image"
+           android:scaleType="fitXY"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:contentDescription="@string/img_desc"/>
+
+       <ImageView
+           android:id="@+id/iv_dots"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_ellipse"
+           android:layout_marginStart="@dimen/_18sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           app:layout_constraintTop_toBottomOf="@+id/iv_product"
+           app:layout_constraintStart_toStartOf="parent"
+           android:contentDescription="@string/img_desc"/>
+
+       <TextView
+           android:id="@+id/tvName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/_5sdp"
+           android:lines="1"
+           tools:text="@string/technology"
+           android:fontFamily="@font/strawford_medium"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_10ssp"
+           app:layout_constraintTop_toTopOf="@+id/iv_dots"
+           app:layout_constraintBottom_toBottomOf="@+id/iv_dots"
+           app:layout_constraintStart_toEndOf="@+id/iv_dots"/>
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:lines="3"
+           android:text="@string/description_title"
+           android:fontFamily="@font/strawford_medium"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_11ssp"
+           app:layout_constraintTop_toBottomOf="@+id/iv_dots"
+           app:layout_constraintStart_toStartOf="@id/iv_dots"
+           app:layout_constraintEnd_toEndOf="parent"
+         />
+
+       <TextView
+           android:id="@+id/tvDate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:layout_marginStart="@dimen/_5sdp"
+           android:text="@string/date"
+           android:layout_marginBottom="@dimen/_10sdp"
+           android:fontFamily="@font/strawford_medium"
+           android:textColor="@color/light_gray"
+           android:textSize="@dimen/_11ssp"
+           app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="@id/iv_dots"/>
+
+       <!-- <TextView
+           android:id="@+id/tasks"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           tools:text="Hello world"
+           android:textColor="#9C27B0"
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>-->
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_white"
+    tools:context="com.example.alkyeservices.view.WelcomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_36sdp"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <ImageView
+                android:id="@+id/ivAppLogo"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_112sdp"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_app_logo" />
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                style="@style/TextStyleStrawFordBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:text="@string/text_welcome_title"
+                android:textSize="@dimen/_19ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivAppLogo" />
+
+            <TextView
+                android:id="@+id/tvCommas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:fontFamily="@font/strawford_black"
+                android:includeFontPadding="false"
+                android:text="@string/text_welcome_comma"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26ssp"
+                app:layout_constraintStart_toStartOf="@id/ivAppLogo"
+                app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/TextScillaRegularItalic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_34sdp"
+                android:lineSpacingExtra="@dimen/_6sdp"
+                android:text="@string/text_welcome_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvCommas"
+                app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUP"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_120sdp"
+                android:background="@drawable/bg_black_dark_corner_11"
+                android:fontFamily="@font/strawford_medium"
+                android:foreground="@drawable/ripple_box_corner_11"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/bg_white_outline_black_corner_11"
+                android:fontFamily="@font/strawford_medium"
+                android:foreground="@drawable/ripple_box_corner_11"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignUP" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                style="@style/TextStyleStrawFordRegural"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="@string/text_terms"
+                android:textColor="@color/textDarkGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSignIn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

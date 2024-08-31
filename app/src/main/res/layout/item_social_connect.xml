@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/socialRoot"
+    android:layout_width="@dimen/_179sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_14sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:elevation="@dimen/_4sdp"
+    android:orientation="vertical">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:foreground="@drawable/ripple_box_corner_11"
+       android:elevation="@dimen/_5sdp">
+
+       <ImageView
+           android:id="@+id/iv_video"
+           android:layout_width="@dimen/_26sdp"
+           android:layout_height="@dimen/_26sdp"
+           android:elevation="@dimen/_4sdp"
+           android:src="@drawable/ic_social_connect"
+           android:layout_marginStart="@dimen/_20sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:contentDescription="@string/app_name"
+           app:layout_constraintTop_toTopOf="@+id/iv_product"
+           app:layout_constraintStart_toStartOf="parent"/>
+
+       <ImageView
+           android:id="@+id/iv_product"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/_236sdp"
+           android:src="@drawable/car_image"
+           android:scaleType="fitXY"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:contentDescription="@string/app_name" />
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="0dp"
+           style="@style/TextStyleStrawFordRegural"
+           android:paddingVertical="@dimen/_25sdp"
+           android:paddingHorizontal="@dimen/_16sdp"
+           android:text="@string/item_description"
+           app:layout_constraintTop_toBottomOf="@+id/iv_product"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
