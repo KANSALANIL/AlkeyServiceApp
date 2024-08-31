@@ -57,6 +57,7 @@
                 style="@style/TextScillaRegularItalic"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
                 android:layout_marginStart="@dimen/_4sdp"
                 android:layout_marginTop="@dimen/_34sdp"
                 android:lineSpacingExtra="@dimen/_6sdp"
